@@ -36,9 +36,11 @@
 
 ## 安装
 
-### 方式一：Cowork（推荐）
+### 方式一：Cowork 一键安装（推荐）
 
-将 `lazylearning/` 文件夹放入 Cowork 的 Skills 目录，重启后即可使用。
+1. 下载 [lazylearning.skill](https://github.com/Connie810/lazy_learning/releases/download/LazyLearning/lazylearning.skill)
+2. 在 Cowork 中点击「Save skill」安装
+3. 重启 Claude，新开对话即可使用
 
 ### 方式二：Claude Code
 
@@ -56,7 +58,7 @@ claude skill add /path/to/lazylearning
 
 第一次使用时，LazyLearning 只问你一件事：
 
-> 「你的 Obsidian 收件箱文件夹的完整路径是什么？」
+> 「你希望把新笔记保存到哪个文件夹？」
 
 粘贴路径，它会自动识别 Vault 根目录和子目录，无需手动配置。
 
@@ -77,11 +79,18 @@ LazyLearning：🔍 正在读取链接内容...
   • 先收钱再开发：用预售验证需求...
   • ...
 
-💭 你收藏这篇内容的原因是什么？
+💭 你收藏这篇的原因是什么？（直接回复，或发「跳过」）
 
 你：准备做独立产品，想看看别人怎么起步的
 
 LazyLearning：
+**具体启发**
+- 预售验证这一步直接对应你「起步」的问题：...
+- ...
+
+**行动建议**
+- ...
+
 ✅ 已存入 Obsidian：20_Reading/inbox/20260422_独立开发冷启动原则.md
 🔗 关联笔记：
   · [[20260310_产品定价策略]]：两篇都涉及冷启动，可对比定价和获客的不同切入点
@@ -119,9 +128,6 @@ LazyLearning：找到了 2 篇：
 
 ## 启发
 
-**核心价值**
-...
-
 **具体启发**
 - ...
 
@@ -151,8 +157,8 @@ LazyLearning：找到了 2 篇：
 **Q：想修改收件箱路径？**
 发送 `/config`，重新配置。
 
-**Q：能搜索 inbox 以外的笔记吗？**
-目前只读写指定的收件箱目录，不会访问其他文件。
+**Q：问答功能能搜索哪些笔记？**
+扫描整个 Vault（你的 Obsidian 库），不限于收件箱目录。新笔记只写入你指定的收件箱文件夹。
 
 **Q：支持英文内容吗？**
 支持。LazyLearning 会用你对话的语言回复，笔记内容语言保持原文。
